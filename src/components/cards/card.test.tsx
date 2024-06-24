@@ -25,7 +25,7 @@ describe("Card component", () => {
       />
     );
 
-    expect(screen.getByText(cardData.header)).toBeInTheDocument();
+    expect(screen.getByText(cardData.header)).not.toBeInTheDocument();
     expect(screen.getByText(cardData.text.text)).toBeInTheDocument();
     expect(screen.getByAltText("illustrations")).toBeInTheDocument();
   });
