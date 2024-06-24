@@ -1,49 +1,23 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal TypeScript Starter
-</h1>
+# This is for **Shelter**
 
-## 🚀 Quick start
+I have answered the questions as best I could.
 
-1.  **Create a Gatsby site.**
+I've spent the day to use the tech stack you've requested the applicants to have experience in. I thoroughly enjoyed doing the following:
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+- [x] Using gatsby and figuring out the difference between page component which has access to more than `props`
+- [x] Ordinary component that gets `props` handed down
+- [x] Utilising `Contentful` to have images and content stored
+- [x] Using `GraphQL` to query for said data (I'm used to the REST API protocol).
+- [x] Wrote this using TypeScript (I'm still picking it up and really enjoying it)
+- [x] Guess what the minimal CSS was with, you guessed it! `tailwind`
+- [x] Done some minor testing for the `Card` component
+- [] Deployed using `Netlify`
+- [] Integrated `CircleCI
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
+I can assure you that I'm a person who loves to explore and learn new things whilst going above and beyond when necessary. An example of this would be when I had to teach a cohor of 100+ students and dedicated out of hours support sessions to ensure they would have the best possible chance of succeeding.
 
-2.  **Start developing.**
+Hope to hear from you,
 
-    Navigate into your new site’s directory and start it up.
+Regards,
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.tsx` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+Hamza
