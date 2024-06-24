@@ -27,7 +27,6 @@
     "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-source-contentful": "^8.13.2",
     "gatsby-transformer-sharp": "^5.13.1",
-    "netlify": "^13.1.20",
     "postcss": "^8.4.38",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -44,6 +43,7 @@
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "jsdom": "^24.1.0",
+    "netlify-cli": "^17.29.0",
     "ts-jest": "^29.1.5"
   }
 }
