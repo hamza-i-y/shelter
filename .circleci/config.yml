@@ -1,6 +1,26 @@
 version: 2.1
+
 jobs:
-  build:
+  test:
+    working_directory: ~/repo
+    docker:
+      - image: cimg/node:18.16.0
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
+      - run:
+          name: Install Dependencies
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Run Tests
+          command: npm test
+
+  build-and-deploy:
     working_directory: ~/repo
     docker:
       - image: cimg/node:18.16.0
@@ -25,17 +45,16 @@ jobs:
       - run:
           name: Deploy to Netlify
           command: ./node_modules/.bin/netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --prod --dir=public
+
 workflows:
   version: 2
-  build-test-deploy:
+  test-build-deploy:
     jobs:
-      - build
-      - test:
-          requires:
-            - build
-      - deploy:
+      - test
+      - build-and-deploy:
           requires:
             - test
           filters:
             branches:
-              only: main
+              only:
+                - main
