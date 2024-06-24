@@ -6,12 +6,12 @@ import "@testing-library/jest-dom";
 import { Card } from "./card";
 
 const cardData = {
-  header: "Test Header",
+  header: "Hamza Ibrahim",
   image: {
-    url: "https://example.com/image.jpg",
+    url: "https://hamzaiy.com/profilepic.jpg",
   },
   text: {
-    text: "Sample text for testing",
+    text: "Software Coach / Frontend Developer",
   },
 };
 
@@ -25,7 +25,7 @@ describe("Card component", () => {
       />
     );
 
-    expect(screen.getByText(cardData.header)).not.toBeInTheDocument();
+    expect(screen.getByText(cardData.header)).toBeInTheDocument();
     expect(screen.getByText(cardData.text.text)).toBeInTheDocument();
     expect(screen.getByAltText("illustrations")).toBeInTheDocument();
   });
