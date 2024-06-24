@@ -27,10 +27,15 @@ jobs:
           command: ./node_modules/.bin/netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --prod --dir=public
 workflows:
   version: 2
-  build-deploy:
+  build-test-deploy:
     jobs:
-      - build:
+      - build
+      - test:
+          requires:
+            - build
+      - deploy:
+          requires:
+            - test
           filters:
             branches:
-              only:
-                - main
+              only: main
